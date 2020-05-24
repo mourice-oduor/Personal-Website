@@ -1,2 +1,1 @@
-#simple website intro 
-This is really awesome
+My personal website, showcasing the front-end developer skills
