@@ -6,17 +6,37 @@
     border-right: 15px solid transparent;
     border-bottom: 15px solid rgb(14, 67, 214);
 }
+.nav a, .navbar-nav:hover{
+    background:#000;color:#fff;color:#aaa;
+}
+
+.container {
+    text-align: center;
+}
+
+{
+  box-sizing: border-box;
+}
 
 .column {
   float: left;
+  /* margin: 0.5% 0 1% 0.5%; */
+  column-gap: 10px;
+  column-rule-style: solid;
+  column-rule-width: 1px;
+  column-rule-color: rgb(6, 61, 80);
 }
 
-.left, .right {
+.left {
   width: 25%;
 }
 
 .middle {
   width: 50%;
+}
+
+.right {
+    width: 25%;
 }
 
 @media screen and (max-width: 600px) {
@@ -25,6 +45,9 @@
   }
 }
 
+#org {
+    color: rgb(237, 245, 248);
+}
 
 .img-responsive {
     width: 70%;
@@ -36,20 +59,25 @@
     margin-left: 25px;
 }
 
+#class {
+    margin-left: 25px;
+}
+
 html {
 	scroll-behavior: smooth;
 }
 
 .pp {
-    color: rgb(3, 2, 2);
+    color: rgb(255, 253, 253);
 }
 
 
 .text-5xl {
     scroll-behavior: auto;
-    text-align: center;
+    /* text-align: center; */
+    margin-left: 60px;
     padding: 5px;
-    color: rgba(23, 29, 1, 0.952);
+    color: rgba(247, 188, 235, 0.952);
 }
 
 h1 {
@@ -60,32 +88,34 @@ h1 {
 
 }
 
-.nav a, .navbar-nav:hover{
-    background:#000;color:#fff;color:#aaa;
-}
-
 body {
-    background:rgb(248, 248, 244)
+    background:rgb(252, 252, 250);
+    background-image: url('/home/net/MORYSO/JAVASCRPIT/my js/my_site/bg/image29.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blur(2px); */
+    /* -webkit-filter: blur(2px); */
 }
 
-
-
-#div_top_hypers {
-    background-color:#f0f5f7;
-    display:inline;
-    padding: 20px; 
-}
-ul#horizontal-list li{
-    display: inline;
+ul#horizontal-list li {
+    /* display: grid; */
     padding-right: 5px;
-    color: darkorchid;
     max-width: 2px;
     
 }
+
 ul#horizontal-list {
-	min-width: 696px;
+	min-width: 650px;
 	list-style: none;
 	padding-top: 20px;
+}
+
+.my-img {
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 input[type=text] {
@@ -96,6 +126,7 @@ input[type=text], textarea{
     width:50%;
     box-sizing:border-box;
 }
+
 input[type=submit] {
     margin-left:200px;border:1px solid black;
     color:rgb(248, 245, 245);
@@ -106,15 +137,19 @@ input[type=submit] {
     font-family:Centaur, serif;
     letter-spacing:2px;}
 
-.container {
-    text-align: center;
-}
+/* .min {
+    padding-left: 50px;
+    margin-left: 50%;
+} */
 .contact {
+    padding-top: 10px;
     margin-left: 25px 
+}
+#cont{
+    color: rgb(1, 1, 17);
 }
 
 footer {
-    border-start-end-radius:2px solid rgb(45, 2, 65);
     text-align:center;
     font-size:80%;
     padding:100px 0;
