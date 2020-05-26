@@ -135,22 +135,25 @@ input[type=submit] {
     text-shadow:1px 1px 0px #000;
     font-size:20px;
     font-family:Centaur, serif;
-    letter-spacing:2px;}
+    letter-spacing:2px;
+}
 
-/* .min {
-    padding-left: 50px;
-    margin-left: 50%;
-} */
 .contact {
     padding-top: 10px;
-    margin-left: 25px 
+    /* margin-left: 25px  */
 }
 #cont{
     color: rgb(1, 1, 17);
 }
 
-footer {
-    text-align:center;
-    font-size:80%;
-    padding:100px 0;
+.footer {
+  position: initial;
+  left: 0;
+  font-size:80%;
+  padding:10px 0;
+  bottom: 0%;
+  width: 100%;
+  background-color: rgb(14, 10, 10);
+  color: white;
+  text-align: center;
 }
