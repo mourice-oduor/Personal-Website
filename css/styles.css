@@ -179,10 +179,29 @@ input[type=submit] {
   padding: 20px;
   font-size: 30px;
   text-align: center;
-  text-decoration: rgb(74, 74, 121);
+  text-decoration: none;
+  /* background: #007bb5; */
   margin: 0px 10px;
-  color: rgb(38, 8, 211);
+  color: rgb(236, 235, 245);
   transition: all 0.3s ease;
+  border-radius: 50%;
+}
+.fa-twitter {
+  background: #007bb5;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-facebook {
+  background: #007bb5;
+}
+.fa-instagram {
+  background: lightsalmon;
+}
+.fa-google {
+  background: maroon;
 }
 
 .fa:hover {
