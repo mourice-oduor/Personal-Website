@@ -80,6 +80,19 @@ html {
     color: rgba(247, 188, 235, 0.952);
 }
 
+/* .zoom {
+  padding: 20px;
+  /* background-color: green; */
+  transition: transform .1s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+} */
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 h1 {
     text-transform:uppercase;
     padding-top: 10px;
@@ -150,10 +163,28 @@ input[type=submit] {
   position: initial;
   left: 0;
   font-size:80%;
-  padding:10px 0;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold;
+  clear: both;
+  padding:10px;
   bottom: 0%;
   width: 100%;
-  background-color: rgb(14, 10, 10);
-  color: white;
+  background-color: rgb(34, 31, 31);
+  /* height: auto; */
   text-align: center;
+}
+
+.fa {
+  display: inline;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: rgb(74, 74, 121);
+  margin: 0px 10px;
+  color: rgb(38, 8, 211);
+  transition: all 0.3s ease;
+}
+
+.fa:hover {
+    opacity: 0.7;
 }
