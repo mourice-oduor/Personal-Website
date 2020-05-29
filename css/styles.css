@@ -22,21 +22,15 @@
   float: left;
   /* margin: 0.5% 0 1% 0.5%; */
   column-gap: 10px;
-  column-rule-style: solid;
-  column-rule-width: 1px;
-  column-rule-color: rgb(6, 61, 80);
+  column-rule-width: 1px solid rgb(6, 61, 80);
 }
 
-.left {
+.leftn, :right {
   width: 25%;
 }
 
 .middle {
   width: 50%;
-}
-
-.right {
-    width: 25%;
 }
 
 @media screen and (max-width: 600px) {
@@ -74,19 +68,17 @@ html {
 
 .text-5xl {
     scroll-behavior: auto;
-    /* text-align: center; */
     margin-left: 60px;
     padding: 5px;
     color: rgba(247, 188, 235, 0.952);
 }
 
 /* .zoom {
-  padding: 20px;
-  /* background-color: green; */
+  padding: 1.5rem;
   transition: transform .1s; /* Animation */
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
+  /* width: 200px;
+  height: 200px; */
+  /* margin: 0 auto; */
 } */
 
 .zoom:hover {
@@ -106,9 +98,10 @@ body {
     background-image: url('/home/net/MORYSO/JAVASCRPIT/my js/my_site/bg/image29.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* filter: blur(2px); */
-    /* -webkit-filter: blur(2px); */
 }
+/* .gradient-light-blue::after {
+    background-color: rgba(28,206,234,0.82);
+    background: linear-gradient(-45deg, rgba(147,26,222,0.83) 0%, rgba(28,206,234,0.82) 100%); */
 
 ul#horizontal-list li {
     /* display: grid; */
@@ -126,23 +119,22 @@ ul#horizontal-list {
 .my-img {
     width: 250px;
     height: 200px;
-    padding: 10px;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding: 10px 20px;
+    /* padding-top: 10px;
+    padding-bottom: 20px; */
 }
 
 input[type=text] {
     margin-bottom:20px;
     width: 50%;
 }
-input[type=text], textarea {
+input[type=text], textarea{
     width:50%;
     box-sizing:border-box;
 }
 
 input[type=submit] {
-    margin-left:200px;
-    border:1px solid black;
+    margin-left:200px;border:1px solid black;
     color:rgb(248, 245, 245);
     background:rgb(21, 21, 88);
     padding:5px;
@@ -171,7 +163,6 @@ input[type=submit] {
   bottom: 0%;
   width: 100%;
   background-color: rgb(34, 31, 31);
-  /* height: auto; */
   text-align: center;
 }
 
