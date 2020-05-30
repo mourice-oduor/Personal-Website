@@ -190,10 +190,7 @@ input[type=submit] {
   background: #007bb5;
 }
 .fa-instagram {
-  background: lightsalmon;
-}
-.fa-google {
-  background: maroon;
+  background-color: inherit;
 }
 
 .fa:hover {
