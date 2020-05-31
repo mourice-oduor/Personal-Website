@@ -202,3 +202,7 @@ input[type=submit] {
 .fa:hover {
     opacity: 0.7;
 }
+.footer2 {
+  border-top: 1px solid rgb(255, 253, 253);
+  padding-top: 3%;
+}
