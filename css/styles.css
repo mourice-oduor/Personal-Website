@@ -1,4 +1,4 @@
-.navbar-nav:hover {
+.nav a, .navbar-nav:hover {
     background:#000;
 }
 .nav-item {
@@ -10,6 +10,17 @@
     border-right: 15px solid transparent;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .row {
+  padding-top: 100px;
+}
+.meta-class {
+    margin-left: 25px;
+}
 .container {
     text-align: center;
 }
@@ -47,10 +58,6 @@
     width: 70%;
      margin-left: 15px;
      padding: 10px;
-}
-
-.meta-class {
-    margin-left: 25px;
 }
 
 #class {
