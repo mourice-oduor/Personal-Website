@@ -90,19 +90,26 @@ h1 {
 
 body {
   overflow-x: hidden;
-  background:rgb(252, 252, 250);
+  background: black;
+  color: white;
   background-image: url('/home/net/MORYSO/JAVASCRPIT/my js/my_site/bg/image29.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* .gradient-light-blue::after {
-    background-color: rgba(28,206,234,0.82);
-    background: linear-gradient(-45deg, rgba(147,26,222,0.83) 0%, rgba(28,206,234,0.82) 100%); */
 
+/* @media screen and (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: black;
+  }
+} */
+/* .gradient-light-blue::after {
+  background-color: rgba(28,206,234,0.82);
+  background: linear-gradient(-45deg, rgba(147,26,222,0.83) 0%, rgba(28,206,234,0.82) 100%);
+} */
 ul#horizontal-list li {
   padding-right: 5px;
   max-width: 2px;
-    
 }
 
 ul#horizontal-list {
