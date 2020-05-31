@@ -1,13 +1,13 @@
 .nav a, .navbar-nav:hover {
-    background:#000;
+  background:#000;
 }
 .nav-item {
-    border-top: 15px solid rgb(14, 67, 214);
-    border-bottom: 15px solid rgb(14, 67, 214);
-    padding: 2px;
-    margin: 0px auto;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
+  border-top: 15px solid rgb(14, 67, 214);
+  border-bottom: 15px solid rgb(14, 67, 214);
+  padding: 2px;
+  margin: 0px auto;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
 }
 
 .sticky {
@@ -18,12 +18,11 @@
 .sticky + .row {
   padding-top: 100px;
 }
-.meta-class {
-    margin-left: 25px;
-}
+
 .container {
-    text-align: center;
+  text-align: center;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -48,19 +47,22 @@
     width: 100%;
   }
 }
+.meta-class {
+  margin-left: 25px;
+}
 
 #org {
-    color: rgb(237, 245, 248);
+  color: rgb(237, 245, 248);
 }
 
 .img-responsive {
-    width: 70%;
-     margin-left: 15px;
-     padding: 10px;
+  width: 70%;
+  margin-left: 15px;
+  padding: 10px;
 }
 
 #class {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 html {
@@ -68,38 +70,38 @@ html {
 }
 
 .pp {
-    color: rgb(255, 253, 253);
+  color: rgb(255, 253, 253);
 }
 
-
 .text-5xl {
-    scroll-behavior: auto;
-    margin-left: 60px;
-    padding: 5px;
-    color: rgba(247, 188, 235, 0.952);
+  scroll-behavior: auto;
+  margin-left: 60px;
+  padding: 5px;
+  color: rgba(247, 188, 235, 0.952);
 }
 
 h1 {
-    text-transform:uppercase;
-    padding-top: 10px;
-    font-size:15px;
-    letter-spacing:5px;
-    color: rgb(236, 15, 137);
+  text-transform:uppercase;
+  padding-top: 10px;
+  font-size:15px;
+  letter-spacing:5px;
+  color: rgb(236, 15, 137);
 }
 
 body {
-    background:rgb(252, 252, 250);
-    background-image: url('/home/net/MORYSO/JAVASCRPIT/my js/my_site/bg/image29.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  overflow-x: hidden;
+  background:rgb(252, 252, 250);
+  background-image: url('/home/net/MORYSO/JAVASCRPIT/my js/my_site/bg/image29.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* .gradient-light-blue::after {
     background-color: rgba(28,206,234,0.82);
     background: linear-gradient(-45deg, rgba(147,26,222,0.83) 0%, rgba(28,206,234,0.82) 100%); */
 
 ul#horizontal-list li {
-    padding-right: 5px;
-    max-width: 2px;
+  padding-right: 5px;
+  max-width: 2px;
     
 }
 
@@ -110,35 +112,35 @@ ul#horizontal-list {
 }
 
 .my-img {
-    width: 250px;
-    height: 200px;
-    padding: 10px 20px;
+  width: 250px;
+  height: 200px;
+  padding: 10px 20px;
 }
 
 input[type=text] {
-    margin-bottom:20px;
-    width: 50%;
+  margin-bottom:20px;
+  width: 50%;
 }
 input[type=text], textarea{
-    width:50%;
-    box-sizing:border-box;
+  width:50%;
+  box-sizing:border-box;
 }
 
 input[type=submit] {
-    margin-left:200px;
-    border:1px solid black;
-    color:rgb(248, 245, 245);
-    background:rgb(21, 21, 88);
-    padding:5px;
-    text-shadow:1px 1px 0px #000;
-    font-size:20px;
-    font-family:Centaur, serif;
-    letter-spacing:2px;
+  margin-left:200px;
+  border:1px solid black;
+  color:rgb(248, 245, 245);
+  background:rgb(21, 21, 88);
+  padding:5px;
+  text-shadow:1px 1px 0px #000;
+  font-size:20px;
+  font-family:Centaur, serif;
+  letter-spacing:2px;
 }
 
 .contact {
-    padding-top: 10px;
-    /* margin-left: 25px  */
+  padding-top: 10px;
+  /* margin-left: 25px  */
 }
 #cont{
     color: rgb(1, 1, 17);
