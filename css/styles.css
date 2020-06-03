@@ -1,19 +1,29 @@
-.nav a, .navbar-nav:hover {
-  background:#000;
+.navbar-brand, .nav-link {
+  color: #000;
+  font-weight:bold;
+}
+.navbar-nav {
+  /* background: rgb(250, 245, 245); */
+  color: #000;
+}
+.nav a:hover {
+  background:rgb(10, 2, 117);
+  color: rgb(15, 3, 70);
 }
 .nav-item {
-  border-top: 15px solid rgb(14, 67, 214);
-  border-bottom: 15px solid rgb(14, 67, 214);
+  border: 15px 15px 15px 15px;
   padding: 2px;
   margin: 0px auto;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
+}
+#navbar {
+  min-height:70px;
+  border-bottom: 2px solid #041d88;
 }
 
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  width:100%;
 }
 .sticky + .row {
   padding-top: 100px;
@@ -21,137 +31,282 @@
 
 .container {
   text-align: center;
+  width:80%;
+  margin:auto;
+  overflow:hidden;
 }
 
 * {
   box-sizing: border-box;
 }
+html {
+	scroll-behavior: smooth;
+}
 
-.column {
+#showcase{
+  padding-top: 5px;
+  min-height:500px;
+  background: url('/home/net/MORYSO/JAVASCRPIT/my js/my_site/images/showcase.jpg') no-repeat 0 -500px;
+  text-align:center;
+  color: #ffffff;
+}
+
+#showcase h1 {
+  text-transform:uppercase;
+  margin-top:15%;
+  font-size:55px;
+  margin-bottom: 10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+#about {
+  margin: 5% 0 8% 0;
+  list-style: none;
+}
+#about h2 {
+  text-align: left;
+  margin-left: 25%;
+  text-transform:uppercase;
+  padding: 10px 10px 10px 1.5rem;
+  font-size:15px;
+  font-weight: bold;
+  color: rgb(1, 2, 29);
+}
+#about .img-responsive {
   float: left;
-  /* margin: 0.5% 0 1% 0.5%; */
-  column-gap: 10px;
-  column-rule-width: 1px solid rgb(6, 61, 80);
-}
-
-.left, .right {
   width: 25%;
+  margin: 0 0 2% 25% ;
+  padding: 10px;
+}
+article #about-col{
+  float:left;
+  width:65%;
+}
+aside #sidebar {
+  float:right;
+  width:10%;
+  /* margin:5% 60% 10px 5%; */
 }
 
-.middle {
-  width: 50%;
+aside .dark {
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin:3% 25% 5px 50%;
 }
 
+#main {
+  margin-top:10px;
+  background-color: rgb(247, 244, 250);
+}
+
+#main .page-title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #030303;
+}
+#main h2 {
+  color: #000;
+}
+#main .box{
+  float:left;
+  text-align: center;
+  width:50%;
+  padding:10px;
+}
+
+#main .box img{
+  width:80%;
+}
+
+
+body {
+  overflow-x: hidden;
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#f4f4f4;
+  /* background: black; */
+  /* background-image: url('bg/image29.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.main {
+  margin: 2% 0 2% 0;
+  max-width: fit-content;
+  background-color: #ffffff;
+  background-image: url("/home/net/MORYSO/JAVASCRPIT/my js/my_site/bg/back10.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main h2 {
+  margin-top: 2%;
+  text-align: center;
+  font: 55px bold Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(2, 2, 34);
+}
+.main h3 {
+  text-align: center;
+  font: 35px cursive lighter;
+  color: rgb(70, 3, 114);
+  margin: 2% 30% 2% 40%;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+.row,
+.row > .column {
+  padding: 10px;
+}
+.column {
+  width: 33.33%;
+  padding: 5px;
+  margin: 0 5% 0 5%;
+  flex: 33.33%;
+  display: inline-block;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content {
+  display: inline-block;
+  padding: 10px;
+}
+.row .my-img {
+  width: 350px;
+  height: 250px;
+  /* object-fit: cover; */
+} 
+@media screen and (max-width: 960px) {
+  .column {
+    width: 50%;
+  }
+}
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
   }
 }
-.meta-class {
-  margin-left: 25px;
-}
 
 #org {
-  color: rgb(237, 245, 248);
-}
-
-.img-responsive {
-  width: 70%;
-  margin-left: 15px;
-  padding: 10px;
-}
-
-#class {
-  margin-left: 25px;
-}
-
-html {
-	scroll-behavior: smooth;
-}
-
-.white {
-  color: rgb(255, 253, 253);
-}
-
-.text-5xl {
-  scroll-behavior: auto;
-  margin-left: 60px;
-  padding: 5px;
-  color: rgba(247, 188, 235, 0.952);
-}
-
-h1 {
-  text-transform:uppercase;
-  padding-top: 10px;
-  font-size:15px;
-  letter-spacing:5px;
-  color: rgb(236, 15, 137);
-}
-
-body {
-  overflow-x: hidden;
-  background: black;
-  color: white;
-  background-image: url('/home/net/MORYSO/JAVASCRPIT/my js/my_site/bg/image29.jpg');
+  margin: 5% 0% 5% 0%;
+  color: #ffffff;
+  background-image: url("/home/net/MORYSO/JAVASCRPIT/my js/my_site/bg/back14.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
+#org h1 {
+  text-align: left;
+  margin: 2% 5% 2% 10%;
+  font-size:40px;
+  font-weight: bold;
+}
 
-/* @media screen and (prefers-color-scheme: light) {
-  body {
-    background-color: white;
-    color: black;
-  }
+.awards {
+  margin: 5% 20% 5% 20%;
+  border: 10px solid rgb(87, 82, 90);
+  background-image: url("/home/net/MORYSO/JAVASCRPIT/my js/my_site/bg/back6.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(0, 1, 3);
+  font-weight: bolder;
+}
+
+#achieve {
+  margin-left: 25px;
+}
+#achieve h1 {
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+/* #achieve .meta-class {
+  color: #ffffff;
 } */
-/* .gradient-light-blue::after {
-  background-color: rgba(28,206,234,0.82);
-  background: linear-gradient(-45deg, rgba(147,26,222,0.83) 0%, rgba(28,206,234,0.82) 100%);
-} */
-ul#horizontal-list li {
-  padding-right: 5px;
-  max-width: 2px;
+
+.white {
+  color: rgb(253, 253, 253);
 }
 
-ul#horizontal-list {
-	min-width: 650px;
-	list-style: position;
-	padding-top: 20px;
+#contact h1 {
+  font-weight: bold;
+  margin: 0 0 0 5%;
 }
 
-.my-img {
-  width: 250px;
-  height: 200px;
-  padding: 10px 20px;
+label[for=name] {
+  color: #ffffff;
 }
-
-input[type=text] {
-  margin-bottom:20px;
-  width: 50%;
-}
-input[type=text], textarea{
-  width:50%;
-  box-sizing:border-box;
-}
-
-input[type=submit] {
-  margin-left:200px;
-  border:1px solid black;
-  color:rgb(248, 245, 245);
-  background:rgb(21, 21, 88);
-  padding:5px;
-  text-shadow:1px 1px 0px #000;
-  font-size:20px;
-  font-family:Centaur, serif;
-  letter-spacing:2px;
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px 0 20px 0;
+  background-color: rgb(204, 194, 241);
+  border: 1px solid rgb(10, 10, 10);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px 0 16px 0;
   resize: vertical;
 }
 
-.contact {
-  padding-top: 10px;
-  /* margin-left: 25px  */
+input[type=submit] {
+  background-color: rgb(59, 2, 65);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-#cont{
-    color: rgb(1, 1, 17);
+
+input[type=submit]:hover {
+  background-color: #024e4e;
+}
+
+.container2 {
+  margin: 2% 5% 2% 5%;
+  border-radius: 5px;
+  background: url("/home/net/MORYSO/JAVASCRPIT/my js/my_site/images/image29.jpg");
+  padding: 20px;
+}
+
+#newsletter{
+  margin: 2% 0 2% 0;
+  padding:15px;
+  color:#ffffff;
+  background:#00070c
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form {
+  float:right;
+  margin-top:15px;
+}
+
+#newsletter input[type="email"]{
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+.button_1{
+  height:38px;
+  background:#022150;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+.button_1:hover {
+  background-color: navy;
 }
 
 .footer {
@@ -164,7 +319,7 @@ input[type=submit] {
   padding: 1rem;
   bottom: 0%;
   width: 100%;
-  background-color: rgb(4, 1, 36);
+  background-color: #000;
   /* background: var(--dark);
   color: var(--light); */
   text-align: center;
@@ -176,7 +331,6 @@ input[type=submit] {
   font-size: 30px;
   text-align: center;
   text-decoration: none;
-  /* background: #007bb5; */
   margin: 0px 10px;
   color: rgb(236, 235, 245);
   transition: all 0.3s ease;
@@ -205,5 +359,39 @@ input[type=submit] {
 }
 .footer2 {
   border-top: 1px solid rgb(255, 253, 253);
-  padding-top: 3%;
+  padding-top: 1%;
+}
+
+/* Media Queries */
+@media(max-width: 960px) {
+  .navbar-brand #branding,
+  h nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  #navbar{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
 }
