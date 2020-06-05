@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mourice Web Developer</title>
+    <title>Mourice Web Developer | Welcome </title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div id="navbar">
+    <header id="myheader">
         <nav class="navbar navbar-expand-sm bg-light">
             <div>
                 <a class="navbar-brand" href="index2.html">
@@ -25,7 +25,15 @@
                 </a>
             </div>
             <div class="container">
+                <div class="icon-bar" onclick="Show()">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
                 <ul class="navbar-nav ml-auto">
+                    <li class="close"><span onclick="Hide()">×</span></li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
@@ -43,7 +51,7 @@
                 </ul>
             </div>
         </nav>
-    </div>
+    </header>
 
     <section id="showcase">
         <div class="container">
@@ -57,7 +65,7 @@
 
     <section id="about">
         <article id="about-col">
-            <h2>About Me</h2>
+            <h2>About Mourice</h2>
             <div class="col-bg-4">
                 <img src="images/moryso.jpg" class="img-responsive" />
             </div>
@@ -274,15 +282,14 @@
         </ul>
     </section>
 
-    <section class="awards">
+    <section class="circle">
         <div id="achieve">
             <h1> Awards And Achievements </h1>
             <ul>
                 <li>
                     <a href="https://drive.google.com/drive/u/0/folders/1pr6ZSc2-pXtdW1DnBl3vLMPVW0ictWyR"> Android
                     </a>
-                    <p class="meta-class">Awarded a <strong>Google Africa Scholarship Competition</strong> <br>
-                        Certificate</p>
+                    <p>Awarded a <strong>Google Africa Scholarship Competition</strong> <br>Certificate</p>
                 </li>
                 <li>
                     <a href="https://www.youracclaim.com/earner/earned/badge/5d8b67d3-c18c-4920-a79b-bde6dddb28e7">
@@ -305,18 +312,87 @@
         </div>
     </section>
 
+    <!-- Slideshow container -->
+    <!-- <div class="slideshow-container">
+
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 8</div>
+			<img src="/home/net/MORYSO/JAVASCRPIT/my js/my_site/certs/alc.png" style="width:100%">
+			<div class="text">Android</div>
+		</div>
+	
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 8</div>
+			<img src="/home/net/MORYSO/JAVASCRPIT/my js/my_site/certs/IBM.png" style="width:100%">
+			<div class="text">IBM Cert</div>
+		</div>
+	
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 8</div>
+			<img src="/home/net/MORYSO/JAVASCRPIT/my js/my_site/certs/AI.png" style="width:100%">
+			<div class="text">AI Cert</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">4 / 8</div>
+			<img src="/home/net/MORYSO/JAVASCRPIT/my js/my_site/certs/hashcode-2019.png" style="width:100%">
+			<div class="text">HashCode 2019 Cert</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">5 / 8</div>
+			<img src="/home/net/MORYSO/JAVASCRPIT/my js/my_site/certs/hashcode2020.png" style="width:100%">
+			<div class="text">HashCode 2020 Cert</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">6 / 8</div>
+			<img src="/home/net/MORYSO/JAVASCRPIT/my js/my_site/certs/IEEE.png" style="width:100%">
+			<div class="text">IEEE Cert</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">7 / 8</div>
+			<img src="/home/net/MORYSO/JAVASCRPIT/my js/my_site/certs/digi-cert.png" style="width:100%">
+			<div class="text">Google Digital Cert</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">8 / 8</div>
+			<img src="/home/net/MORYSO/JAVASCRPIT/my js/my_site/certs/expo.png" style="width:100%">
+			<div class="text">Career Expo Cert</div>
+		</div>
+	
+		Next and previous buttons
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+	
+	The dots/circles
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+		<span class="dot" onclick="currentSlide(5)"></span>
+		<span class="dot" onclick="currentSlide(6)"></span>
+		<span class="dot" onclick="currentSlide(7)"></span>
+		<span class="dot" onclick="currentSlide(8)"></span>
+	</div> -->
+
     <section id="contact">
         <h1>Contact Me Here!</h1>
 
         <div class="container2">
             <form action="/action_page.php">
-                <label for="name">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Enter Your First name..">
+                <label for="name">Name</label>
+                <input type="text" id="fname" name="fullnames" placeholder="Enter Your Full names..">
 
-                <label for="name">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                <label for="name">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Type Your Message.." style="height:120px"></textarea>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Email Address..">
+                <label for="Message">Message</label>
+                <textarea id="Message" name="Message" placeholder="Type Your Message.." style="height:120px"></textarea>
 
                 <input type="submit" value="Submit">
             </form>
@@ -339,8 +415,105 @@
 
             <div class="row">
 
+                <div class="col-md-3 mx-auto">
+
+                    <!-- <h1 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h1> -->
+                    <h1>more-items</h1>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a
+                                href="https://github.com/mourice-oduor/Django-Full-Stack/tree/master/blog_project/mysite">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#!">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#!">My Team</a>
+                        </li>
+                        <li>
+                            <a href="https://www.britesmanagement.com/jobs">Brites</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- <hr class="clearfix w-100 d-md-none"> -->
+
+                <div class="col-md-3 mx-auto">
+
+                    <h1 class="">Education</h1>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.freecodecamp.org/">free code camp</a>
+                        </li>
+                        <li>
+                            <a href="https://www.w3schools.com/">w3-school</a>
+                        </li>
+                        <li>
+                            <a href="https://www.codecademy.com/">Code Academy</a>
+                        </li>
+                        <li>
+                            <a href="https://www.khanacademy.org/">Khan Academy</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- <hr class="clearfix w-100 d-md-none"> -->
+
+                <div class="col-md-3 mx-auto">
+                    <h1>Education</h1>
+
+                    <ul class="list-unstyled">
+
+                        <li>
+                            <a href="https://www.geeksforgeeks.org/">Geeks</a>
+                        </li>
+                        <li>
+                            <a href="https://css-tricks.com/">css-tricks</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/">mdnBootstrap</a>
+                        </li>
+                        <li>
+                            <a href="https://www.codewars.com/">Codewars</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- <hr class="clearfix w-100 d-md-none"> -->
+
+                <div class="col-md-3 mx-auto">
+                    <h1>Jobs</h1>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://www.linkedin.com/jobs/">Linkd-jobs</a>
+                        </li>
+                        <li>
+                            <a href="https://www.brightermonday.co.ke/">BrighterMonday</a>
+                        </li>
+                        <li>
+                            <a href="https://www.sitepoint.com/jobs/">Site-Point</a>
+                        </li>
+                        <li>
+                            <a href="https://ke.recruit.net/jobs">Recruit</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+
                 <div class="col-md-12 py-5">
+
                     <div class="fa">
+                        <section class="Follow">
+                            <h1>Follow me on: </h1>
+                        </section>
+
                         <a href="https://twitter.com/Morys0" class="tw-ic">
                             <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                         </a>
@@ -354,7 +527,7 @@
                             <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
                         </a>
                         <a href="https://dev.to/morys0" class="dev-ic">
-                            <i class="fas fa-dev fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                            <i class="fas fa-dev fa-md white-text mr-md-5 mr-3 fa-2x"> </i>
                         </a>
                     </div>
                 </div>
@@ -366,7 +539,7 @@
         <div class="footer2">
             <footer>
                 <p class="white"> Copyright &copy;2020. All Rights Reserved. </p>
-                <p class="white"> Designed by @moryso</p>
+                <p class="white"> Designed by @moryso | <strong> +254704489364 </strong></p>
             </footer>
         </div>
 
