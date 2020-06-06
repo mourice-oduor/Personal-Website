@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mourice Web Developer | Welcome </title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -12,6 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
 <body>
@@ -25,12 +27,17 @@
                 </a>
             </div>
             <div class="container">
-                <div class="icon-bar" onclick="Show()">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </div>
+                <!-- <div class="icon-bar" onclick="Show()">
+					<i></i>
+					<i></i>
+					<i></i>
+					<i></i>
+				</div> -->
+
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
                 <ul class="navbar-nav ml-auto">
                     <li class="close"><span onclick="Hide()">×</span></li>
 
@@ -90,7 +97,7 @@
 
     <section id="main">
         <div class="container">
-            <h1 class="page-title">Services</h1>
+            <h1 class="page-title"><u>Services</u> </h1>
             <div class="box">
                 <h2>Website Design And Maintenance</h2>
                 <img src="images/webdev.jpeg" alt="">
@@ -137,9 +144,9 @@
     </section>
 
     <div class="main">
-        <h2>Skills</h2>
+        <h2><u>Skills</u></h2>
         <div class="row">
-            <h3>Front-End</h3>
+            <h3><u>Front-End</u></h3>
             <div class="column">
                 <div class="content">
                     <img src="images/html.jpeg" class="my-img" alt="html">
@@ -175,7 +182,7 @@
                 </div>
             </div>
 
-            <h3>Back-End</h3>
+            <h3><u>Back-End</u></h3>
             <div class="column">
                 <div class="content">
                     <img src="images/nodejs.jpeg" class="my-img" alt="nodejs">
@@ -190,7 +197,7 @@
                 </div>
             </div>
 
-            <h3>Database</h3>
+            <h3><u>Database</u></h3>
             <div class="column">
                 <div class="content">
                     <img src="images/mongo.jpeg" class="my-img" alt="mongo-db">
@@ -209,7 +216,7 @@
                 </div>
             </div>
 
-            <h3>Cloud Development & AI</h3>
+            <h3><u>Cloud Development & AI</u></h3>
             <div class="column">
                 <div class="content">
                     <img src="images/aws.png" class="my-img" alt="aws">
@@ -234,7 +241,7 @@
                 </div>
             </div>
 
-            <h3>Other Skills</h3>
+            <h3><u>Other Skills</u></h3>
             <div class="column">
                 <div class="content">
                     <img src="images/linux.jpeg" class="my-img" alt="linux">
@@ -252,39 +259,40 @@
 
 
     <section id="org">
-        <h1>Organisations</h1>
+        <h1><u>Organisations</u></h1>
         <ul>
             <li>
                 <img src="" alt="">
-                <a href="https://drive.google.com/drive/u/0/folders/1VQaHHkN_lhY2RXv12sKLkSln1JbRmpBz">IEEE </a>
+                <a href="https://drive.google.com/drive/u/0/folders/1VQaHHkN_lhY2RXv12sKLkSln1JbRmpBz"
+                    class="clear">IEEE </a>
                 <p>Active <strong>IEEE</strong> member</p>
             </li>
             <li>
                 <img src="" alt="">
-                <a href="https://www.ibm.com/ibmweb/myibm/profile/profile-edit.jsp"> IBM </a>
+                <a href="https://www.ibm.com/ibmweb/myibm/profile/profile-edit.jsp" class="clear"> IBM </a>
             </li>
             <li>
                 <img src="" alt="">
-                <a href="https://www.meetup.com/members/260497265/"> GDG-Member </a>
+                <a href="https://www.meetup.com/members/260497265/" class="clear"> GDG-Member </a>
             </li>
             <li>
                 <img src="" alt="">
-                <a href="https://github.com/dscttu"> DSC-TTU</a>
+                <a href="https://github.com/dscttu" class="clear"> DSC-TTU</a>
                 <p>Co-Team member of <br>DSC Taita Taveta University </p>
             </li>
             <li>
                 <img src="" alt="">
-                <a href="https://github.com/BuildForSDG">BuildForSDG</a>
+                <a href="https://github.com/BuildForSDG" class="clear">BuildForSDG</a>
             </li>
             <li>
-                <a href="https://github.com/mictecttu"> MICTEC-TTU </a>
+                <a href="https://github.com/mictecttu" class="clear"> MICTEC-TTU </a>
             </li>
         </ul>
     </section>
 
     <section class="circle">
         <div id="achieve">
-            <h1> Awards And Achievements </h1>
+            <h1><u>Awards And Achievements</u></h1>
             <ul>
                 <li>
                     <a href="https://drive.google.com/drive/u/0/folders/1pr6ZSc2-pXtdW1DnBl3vLMPVW0ictWyR"> Android
@@ -382,7 +390,7 @@
 	</div> -->
 
     <section id="contact">
-        <h1>Contact Me Here!</h1>
+        <h1 ml-5%>Contact Me Here!</h1>
 
         <div class="container2">
             <form action="/action_page.php">
