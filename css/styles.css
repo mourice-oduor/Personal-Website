@@ -1,6 +1,6 @@
 header {
   min-height:70px;
-  border-bottom: 2px solid #041d88;
+  border-bottom: 1rem solid #041d88;
   overflow: hidden;
 }
 
@@ -67,13 +67,29 @@ header {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
+About
+Portfolio
+Services
+Contact-Me
+
   flex-direction: column;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
 } */
-
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
 
 
 
@@ -112,6 +128,7 @@ html {
   background: url('/home/net/MORYSO/JAVASCRPIT/my js/my_site/images/showcase.jpg') no-repeat 0 -500px;
   text-align:center;
   color: #ffffff;
+  border: darkblue;
 }
 
 #showcase h1 {
@@ -174,7 +191,7 @@ aside .dark {
   font-size: 35px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #030303;
+  color: #210177;
 }
 #main h2 {
   color: #000;
@@ -188,6 +205,7 @@ aside .dark {
 
 #main .box img{
   width:80%;
+  padding-bottom: 5px;
 }
 
 
@@ -308,7 +326,8 @@ body {
 #achieve h1 {
   font-size: 35px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #000;
+  /* color: #000; */
+  color:  #210177;
 }
 /* #achieve .meta-class {
   color: #ffffff;
@@ -548,6 +567,7 @@ input[type=submit]:hover {
 }
 .fa-dev {
   background-color: rgb(2, 0, 8);
+  color: aqua;
 }
 
 .fa:hover {
@@ -572,7 +592,12 @@ input[type=submit]:hover {
     width: 100%;
   }
 } */
-@media screen and (max-width: 960px) and (max-width: 600px) {
+/* and (max-width: 960px) */
+
+/* @media screen and (max-width: 960px)  { */
+  /* @media (min-width: 576px)  and (max-width: 960px) { */
+/* @media screen and (max-width: 600px) and (max-width: 1023px) { */
+@media all and (max-width: 699px) and (min-width: 520px), (max-width: 1151px) {
   header .navbar-brand,
   /* header .container, */
   #newsletter h1,
@@ -584,14 +609,14 @@ input[type=submit]:hover {
     width:100%;
   }
   
-  /* header .container li {
+  header .container li {
     text-align: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-   } */
+   }
 
   header {
     padding-bottom:20px;
@@ -627,6 +652,33 @@ input[type=submit]:hover {
     -o-transition: left .3s;
     transition: left .3s;
   }
+  .checkbtn {
+    display: block;
+    /* margin-right: 40px; */
+  }
+  .container ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  .container ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .container ul li a{
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul{
+    left: 0;
+  }
+  /*
   .navbar-expand-sm .container ul .close span {
     font-size: 40px;
     display: inline-block;
@@ -641,9 +693,9 @@ input[type=submit]:hover {
     height: auto;
     line-height: normal;
     color: #555555;
-  }
+  } */
 
-  .navbar-expand-sm .container ul .close {
+  /* .navbar-expand-sm .container ul .close {
     display: block;
   }
   
@@ -660,7 +712,7 @@ input[type=submit]:hover {
 
   .navbar-expand-sm .container ._Menus-show {
     left: 0;
-  }
+  } */
 
   #showcase {
     margin-top: 45%;
@@ -731,9 +783,12 @@ input[type=submit]:hover {
     overflow: hidden;
     display: none;
   } */
-
+/* to include media query here */
   .footer .row .col-md {
-    width: 100%;
+    width: 50%;
+    flex-direction: row;
+    text-align: left;
+    justify-content: left;
     position: sticky;
     display: inline-block;
     text-align: left;
