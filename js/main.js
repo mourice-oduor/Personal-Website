@@ -16,6 +16,33 @@ function myFunction() {
     }
 }
 
+// window.scrollBy({
+//     top: 100, // could be negative value
+//     left: 0,
+//     behavior: 'smooth'
+// });
+
+// Option 2 - jQuery Smooth Scrolling
+// $('.container a').on('click', function (e) {
+//   if (this.hash !== '') {
+//     e.preventDefault();
+
+//     const hash = this.hash;
+
+//     $('html, body')
+//       .animate({
+//         scrollTop: $(hash).offset().top
+//       },800);
+//   }
+// });
+
+// Option 3 - Smooth Scroll - https://github.com/cferdinandi/smooth-scroll
+// const scroll = new SmoothScroll('.container a[href*="#"]', {
+//     speed: 500
+// });
+
+
+
 // Responsive navbar that hides the ul-lists on the right
 var navList = document.getElementsByClassName("ml-auto");
 function Show() {
@@ -43,23 +70,7 @@ function currentSlide(n) {
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");// When the user scrolls the page, execute myFunction
-    window.onscroll = function () { myFunction() };
-
-    // Get the navbar
-    var navbar = document.getElementById("navbar");
-
-    // Get the offset position of the navbar
-    var sticky = navbar.offsetTop;
-
-    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
-        }
-    }
+    var dots = document.getElementsByClassName("dot");
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {
