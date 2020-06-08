@@ -16,6 +16,11 @@ function myFunction() {
     }
 }
 
+
+document.querySelector('.menu-btn').addEventListener('click', () =>
+    document.querySelector('.navbar-nav').classList.toggle('show'));
+
+
 // window.scrollBy({
 //     top: 100, // could be negative value
 //     left: 0,
