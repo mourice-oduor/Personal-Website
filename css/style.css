@@ -6,6 +6,16 @@ ul {
   list-style: none;
 }
 
+.my-img:hover {
+  background-size: cover;
+  -moz-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  overflow: hidden;
+  transition: transform .5s ease-in-out;
+  transform: scale(1.5) rotate(360deg);
+}
+
 header {
   min-height:70px;
   border-bottom: 0.3rem solid #041d88;
@@ -176,6 +186,15 @@ aside .container {
   width:50%;
   padding:10px;
 }
+#main .box:hover img {
+    transform: scale(1.1);
+}
+/* #main .box:hover{
+  top: auto;
+  left: auto;
+  width: 40%;
+  height: 40%;
+} */
 #main p {
   font: 1.2em sans-serif;
 }
@@ -419,9 +438,10 @@ body {
 } */
 
 #contact h1 {
-  text-align: center;
+  float: left;
+  padding-left: 5%;
   font-weight: bold;
-  /* margin: 0 0 0 50%; */
+  font-size: 2rem;
 }
 
 label[for=name], [for=Message], [for=email] {
@@ -624,7 +644,6 @@ input[type=submit]:hover {
 
 /* @media all and (max-width: 699px) and (min-width: 520px), (max-width: 1151px) { */
 @media screen and (max-width: 1024px) {
-  /* header .navbar-brand, */
   #newsletter h1,
   #newsletter form,
   #main .box,
@@ -747,24 +766,28 @@ input[type=submit]:hover {
   .navbar-expand-sm  ul.navbar-nav {
     display: block;
     position: absolute;
-    top:0;
+    /* top: 80px;
+    left: -100%; */
+    top: 0;
     left: 0;
     background: #e5e4eb;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     border-right: #f4f4f4 1px solid;
     opacity: 1.5;
-    padding: 2rem;
+    /* padding: 1rem; */
     transform: translate(100%, 10%);
+    transition: all .5s;
     /* transform: translateX(-500px); */
-    transition: transform 0.5s ease-in-out;
-    padding-bottom: 20%;
+    /* transition: transform 0.5s ease-in-out; */
   }
 
   .navbar-expand-sm  ul.navbar-nav li {
-    padding: 1rem;
+    line-height: 1em;
+    height: 2.8em;
+    padding: 2px;
     border-bottom: #f4f4f4 solid 1px;
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
 
   .navbar-expand-sm  ul.navbar-nav li:last-child {
