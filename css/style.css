@@ -18,7 +18,7 @@ ul {
 
 header {
   min-height:70px;
-  border-bottom: 0.3rem solid #041d88;
+  border-bottom: 0.1rem solid #041d88;
   overflow: hidden;
 }
 .navbar-brand, .nav-link {
@@ -37,15 +37,12 @@ header {
   height: 3.5rem;
 }
 .navbar-expand-sm .navbar-nav {
-  /* width: 100%; */
   justify-content: flex-end;
-  /* padding-left: 65%; */
 }
 
 
 .nav a:hover {
   background:rgb(10, 2, 117);
-  /* color: rgb(15, 3, 70); */
 }
 .navbar-expand-sm {
   display: flex;
@@ -64,7 +61,6 @@ header {
 
 .navbar-expand-sm  ul.navbar-nav {
   flex: 1;
-  /* margin-left: 40%; */
 }
 
 .menu-btn {
@@ -94,10 +90,6 @@ header {
   overflow:hidden;
 }
 
-
-/* * {
-  box-sizing: border-box;
-} */
 html {
 	scroll-behavior: smooth;
 }
@@ -105,7 +97,7 @@ html {
 #showcase{
   padding-top: 2rem;
   min-height:500px;
-  background: url('/home/net/MORYSO/JAVASCRPIT/my js/my_site/images/showcase.jpg') no-repeat 0 -500px;
+  background: url('../images/showcase.jpg') no-repeat 0 -500px;
   text-align:center;
   color: #ffffff;
   border: darkblue;
@@ -125,7 +117,6 @@ html {
 #about {
   margin: 5% 0 8% 0;
   list-style: none;
-  /* Scroll Snap */
   scroll-snap-align: center;
 }
 #about h2 {
@@ -151,11 +142,10 @@ article #about-col{
 aside #sidebar {
   float:right;
   width:20%;
-  /* margin:5% 60% 10px 5%; */
 }
 
 aside .dark {
-  padding:15px;
+  padding: 1rem;
   background:#35424a;
   color:#ffffff;
   margin:5% 25% 5% 50%;
@@ -184,24 +174,19 @@ aside .container {
   float:left;
   text-align: center;
   width:50%;
-  padding:10px;
+  padding:10px 5px 10px 2px;
 }
 #main .box:hover img {
     transform: scale(1.1);
 }
-/* #main .box:hover{
-  top: auto;
-  left: auto;
-  width: 40%;
-  height: 40%;
-} */
+
 #main p {
   font: 1.2em sans-serif;
 }
 
 #main .box img{
   width:80%;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 
@@ -217,7 +202,7 @@ body {
   margin: 2% 0 2% 0;
   max-width: fit-content;
   background-color: #ffffff;
-  background-image: url("/home/net/MORYSO/JAVASCRPIT/my js/my_site/bg/back10.jpeg");
+  background-image: url("../bg/back10.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -239,7 +224,6 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-around; */
 }
 .row,
 .row > .column {
@@ -264,7 +248,6 @@ body {
 .row .my-img {
   width: 250px;
   height: 200px;
-  /* object-fit: cover; */
 } 
 
 /* @media screen and (max-width: 960px) {
@@ -281,7 +264,7 @@ body {
 #org {
   margin: 5% 0% 5% 0%;
   color: #000000;
-  background-image: url("/home/net/MORYSO/JAVASCRPIT/my js/my_site/images/organizations.jpg");
+  background-image: url("../images/organizations.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -289,7 +272,6 @@ body {
   color: rgb(41, 5, 124);
   font: 20px Arial, Helvetica, sans-serif;
   font-weight: bold;
-  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 #org h1 {
@@ -303,7 +285,7 @@ body {
 }
 
 .circle {
-  background: url("/home/net/MORYSO/JAVASCRPIT/my js/my_site/bg/back10.jpeg");
+  background: url("../bg/back10.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color:rgb(221, 241, 247);
@@ -324,11 +306,9 @@ body {
 #achieve h1 {
   font-size: 35px;
   font-family: Arial, Helvetica, sans-serif;
-  /* color: #000; */
   color:  #210177;
 }
 
-* {box-sizing:border-box}
 
 /* Slideshow container */
 /* .slideshow-container {
@@ -340,7 +320,7 @@ body {
   overflow: hidden;
   top: 0;
   z-index: 1;
-} */ */
+} */ 
 /* .slideshow-container .mySlides fade {
   position: sticky;
   margin: auto;
@@ -475,7 +455,7 @@ input[type=submit]:hover {
 .container2 {
   margin: 2% 5% 2% 5%;
   border-radius: 5px;
-  background: url("/home/net/MORYSO/JAVASCRPIT/my js/my_site/images/image29.jpg");
+  background: url("../images/image29.jpg");
   padding: 20px;
 }
 
@@ -521,12 +501,12 @@ input[type=submit]:hover {
 }
 
 .links-inner {
-  max-width: 100%;
-  margin: 0 5% 0 10%;
-  padding: 0 4.5rem;
+  width: 100%;
+  margin: 0 10% 0 5%;
+  padding: 0 4.5rem 0 2.5rem;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 4rem;
+  grid-gap: 1rem;
   align-items: center;
   justify-content: center;
 }
@@ -672,7 +652,6 @@ input[type=submit]:hover {
     margin-top: 5rem;
   }
   #about h2 {
-    /* text-align: left; */
     margin: 0 20% 0 2%;
   }
   #about .img-responsive {
@@ -683,17 +662,13 @@ input[type=submit]:hover {
   #sidebar .dark {
     float: none;
     display: -webkit-box;
-    margin: 0 5% 2% 5%;
-    width: 80%;
+    margin: 0 10% 2% 5%;
+    width: 50%;
   }
-  #sidebar .container {
-  text-align: left;
-  font: 1rem sans-serif;
-  padding-left: 5%;
-  }
+  
   .circle {
-    width: 80%;
-    margin: 5% 2% 10% 10%;
+    width: 85%;
+    margin: 5% 2% 10% 5%;
   }
 
   #contact h1 {
@@ -781,6 +756,12 @@ input[type=submit]:hover {
     transform: translateX(-20px);
   }
 
+  #sidebar .container {
+  text-align: left;
+  font: 1rem sans-serif;
+  padding-left: 5%;
+  }
+
 
   .row .my-img {
   width: 100px;
@@ -790,18 +771,18 @@ input[type=submit]:hover {
   .links {
     max-width: 100%;
     font-size: 12px;
-    padding: 0 5% 0 10%;
+    padding: 0 5% 0 2%;
   }
    .links h1 {
     font-size: 12px;
   } 
 
   .links .links-inner {
-    margin: 0 15% 0 5%;
-    padding: 0.5rem;
+    margin: 0 .3rem 0 .2rem;
+    padding: .5rem;
     display: grid;
     grid-gap: 5px;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
   }
