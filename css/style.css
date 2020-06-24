@@ -114,12 +114,13 @@ html {
 #showcase{
   padding-top: 2rem;
   margin: 1% 0 5%;
-  min-height:500px;
+  /* min-height:500px; */
+  min-height: 40rem;
   background: url('../images/showcase.jpg') no-repeat 0 -500px;
   text-align:center;
   color: #ffffff;
   border: darkblue;
-  border-bottom: 1rem solid #fff;
+  /* border-bottom: 1rem solid #fff; */
 }
 
 h6 {
@@ -149,7 +150,7 @@ h6 {
   list-style: none;
   scroll-snap-align: center;
   height: 100%;
-  border-top: 1rem solid #fff;
+  /* border-top: 1rem solid #fff; */
   /* border-bottom: 1rem solid #fff; */
 }
 #about h2 {
@@ -176,23 +177,17 @@ aside #sidebar {
   float:right;
   width: 40%;
   justify-content: right;
-  margin: 25% 10% 10% 5%;
-  padding: 55% 15% 0 5%;
+  margin: 15% 10% 10% 5%;
+  padding: 15% 15% 0 5%;
   background-color:#35424a;
 }
 aside #skill {
   margin-top: 2%;
 }
 
-/* aside .dark {
-  padding: .5rem 15% 0 10%;
-  background:#35424a;
-  color:#ffffff;
-  margin:1% 15% 5% 10%;
-} */
-
 #main {
   margin-top:1rem;
+  border-top: 1rem solid #fff;
   background-color: rgb(247, 244, 250);
 }
 
@@ -240,17 +235,14 @@ body {
 
 .main {
   margin: 2% 0 2% 0;
-  max-width: fit-content;
-  background-color: #ffffff;
-  background-image: url("../bg/back10.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100%;
 }
 .main h2 {
   margin-top: 2%;
   text-align: center;
-  font: 3em bold Verdana, Geneva, Tahoma, sans-serif;
-  color:  #210177;
+  font-size:  2.5em;
+  font-weight: bolder;
+  color:  #f4f4f4;
 }
 .main h3 {
   text-align: justify;
