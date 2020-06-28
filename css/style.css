@@ -20,15 +20,24 @@ li {
 html {
 	scroll-behavior: smooth;
 }
-
+/* 
 .my-img:hover {
   background-size: cover;
   -moz-transform: scale(1.5);
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
   overflow: hidden;
-  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out; */
   /* transform: scale(1.5) rotate(360deg); */
+/* } */
+.my-img {
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+}
+.my-img:hover{
+    transform: scale(1.2);
+    opacity: .8;
 }
 .navbar-expand-sm {
   background: rgb(2, 2, 17);
@@ -37,7 +46,7 @@ html {
 .grad-bar {
   width: 100%;
   height: 8px;
-  background: linear-gradient(-45deg, rgb(250, 251, 252), rgb(217, 194, 247), rgb(7, 5, 112), rgb(1, 1, 49));
+  background: linear-gradient(-45deg, rgb(250, 251, 252), rgb(74, 43, 114), rgb(7, 5, 112), rgb(1, 1, 49));
   background-size: 400% 400%;
   -webkit-animation: gradbar 5s ease infinite;
 	-moz-animation: gradbar 5s ease infinite;
@@ -89,7 +98,7 @@ header {
   color: rgb(2, 2, 17);
   min-height:70px;
   /* border-bottom: 0.1rem solid #041d88; */
-   border-bottom: 0.1rem solid #f4f4f4;
+  border-bottom: 0.1rem solid #f4f4f4;
   overflow: hidden;
 }
 .navbar-brand, .nav-link {
@@ -164,7 +173,7 @@ header {
 }
 
 #showcase{
-  margin: 1% 0 5%;
+  margin: 0 0 5%;
   /* min-height:500px; */
   min-height: 40rem;
   background: url('../images/showcase.jpg') no-repeat 0 -500px;
@@ -538,9 +547,9 @@ input[type=submit]:hover {
   background: #007bb5;
   color: white;
 }
-.fa-facebook {
+/* .fa-facebook {
   background: #007bb5;
-}
+} */
 .fa-instagram {
   background-color: inherit;
 }
@@ -776,5 +785,13 @@ input[type=submit]:hover {
     font: 300 1rem 'Lato', sans-serif;
     letter-spacing: .8px;
     color: #bbb;
+  }
+}
+@media only screen and (max-width: 420px){
+  .circle h1 {
+    font-size: .8em;
+    margin-top: 15%;
+    overflow: hidden;
+    font-weight: bold;
   }
 }
