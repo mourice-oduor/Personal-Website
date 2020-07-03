@@ -88,8 +88,6 @@ header {
   background: rgb(2, 2, 17);
   color: rgb(2, 2, 17);
   min-height:70px;
-  /* border-bottom: 0.1rem solid #041d88; */
-  /* border-bottom: 0.1rem solid #f4f4f4; */
   overflow: hidden;
 }
 .navbar-brand, .nav-link {
@@ -171,14 +169,6 @@ header {
   text-align:center;
   color: #ffffff;
   border: darkblue;
-}
-
-h6 {
-  color: #000000;
-  background-color: #f80202;
-  text-align: center;
-  font-size: 3em;
-  font-weight: bolder;
 }
 
 #showcase h1 {
