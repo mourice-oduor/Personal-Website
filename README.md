@@ -1,1 +1,1 @@
-My personal website, showcasing the front-end developer skills
+Personal static site showcasing my front-end development skills.
