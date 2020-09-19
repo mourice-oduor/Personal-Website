@@ -177,7 +177,7 @@ header {
   margin: 0 0 5%;
   /* min-height:500px; */
   min-height: 40rem;
-  background: url('../images/showcase.jpg') no-repeat 0 -500px;
+  background:url(images/1.JPG) no-repeat 0 -500px;
   text-align:center;
   color: #ffffff;
   border: darkblue;
@@ -235,93 +235,73 @@ aside #skill {
   margin-top: 2%;
 }
 
-#services {
-  margin-top:1rem;
-  border-top: 1rem solid #fff;
-  background-color: #f4f4f4;
-  display: flex;
-  justify-content: space-around;
+/*SERVICES SECTION*/
+
+.service-card {
+  width: 300px;
+  height: 330px;
+  background: #2e2b3f;
+  border-radius: 8px;
+  box-shadow: 5px 0px 20px rgba(0,0,0,39%);
+  position: relative;
+  margin: 0 auto; 
+  overflow: hidden;
 }
-#services .page-title {
-  font-size: 2.5em;
-  font-weight: bold;
-  margin: 1rem 0 1.5rem;
-  text-align: center;
-  color: #210177;
+.service-card::before {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background: #2064d0;
+  border-radius: 50%;
+  top: -95%;
+  left: -25%;
+  transition: all 1s cubic-bezier(.74,.86,.4,.92);
 }
-#services h2 {
-  font-size: 1.5em;
-  color: #210177;
+
+.service-div-pic {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%,-5%);
+  border: 13px solid #2064d0;
+  border-radius: 100%;
+  transition: all 1s cubic-bezier(.74,.86,.4,.92);
 }
-#services .box {
-  float:left;
-  text-align: center;
-  width:50%;
-  padding:10px 5px 10px 2px;
+.service-div-pic img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 8px solid #2e2b3f;
 }
-#services p {
-  font: 1.1em sans-serif;
-}
-#services .box img {
-  width: 250px;
-  height: 200px;
-  padding: .5rem .8rem;
-}
-/* 
-.main {
-  margin: 2% 0 2% 0;
+.service-content {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
   width: 100%;
 }
-.main h2 {
-  margin-top: 2%;
-  text-align: center;
-  font-size:  2.5em;
-  font-weight: bolder;
-  color:  #f4f4f4;
+
+.service-card:hover::before {
+  top: -200%; 
 }
-/* .main p {
-  text-align: center;
-  font-size:  1.5em;
-  color:  #f4f4f4;
-} */
-/* .main h3 {
-  text-align: justify;
-  font: 2em bold cursive lighter;
-  color: rgb(4, 7, 163);
-  margin: 2% 30% 2% 20%;
+
+.service-card:hover .service-div-pic {
+  top: 10%;
+  border: none;
 }
-.main h3:hover {
-  background: #ffffff;
-  transform: translateY(-1.5rem);
+.service-head {
+  background:#2064d0; 
+    transition: all .6s linear;
+  padding: 10px 0;
 }
-.row {
-  display: flex;
-  flex-wrap: wrap;
+
+@media(max-width:576px){
+  .titiley {
+      font-size: 2.2rem;
+  }  
 }
-.row,
-.row > .column {
-  padding: 10px;
-}
-.column {
-  width: 33.33%;
-  padding: 5px;
-  margin: 0 5% 0 5%;
-  flex: 33.33%;
-  display: inline-block;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.content {
-  display: inline-block;
-  padding: 10px;
-}
-.row .my-img {
-  width: 250px;
-  height: 200px;
-}  */ */
+/*SERVICES AREA*/
+
 
 /* Skills */
 .skills {
@@ -383,13 +363,23 @@ aside #skill {
   font-size: 1.6rem;
 }
 
+/* #work {
+  margin: 5% 0% 5% 0%;
+  color: #f4f4f4;
+  border-top: 1rem solid #fff;
+}
+#work h1 {
+  text-align: center;
+  margin: 2% 0% 2% 0%;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #f4f4f4;
+} */
 
-
+/* 
 #org {
   margin: 5% 0% 5% 2%;
   color: #f4f4f4;
-  /* background-image: url("../images/organizations.jpg");
-  background-repeat: no-repeat; */
   border-top: 1rem solid #fff;
   border-bottom: 1rem solid #fff;
 }
@@ -403,13 +393,12 @@ aside #skill {
   margin: 2% 5% 2% 10%;
   font-size: 2.5em;
   font-weight: bold;
-  /* color: #210177; */
   color: #f4f4f4;
 }
 #org ul {
   margin: 0 0 2% 2%;
-}
-
+} */
+/* 
 .circle {
   background: url("../bg/back10.jpeg");
   background-repeat: no-repeat;
@@ -433,7 +422,7 @@ aside #skill {
 }
 #achieve {
   margin: 1% 5% 1% 25%;
-}
+} */
 
 #contact {
   border-top: 1rem solid #fff;
